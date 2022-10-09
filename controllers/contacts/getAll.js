@@ -5,4 +5,4 @@ const getAll = async (req, res) => {
   res.json(result);
 };
 
-module.export = getAll;
+module.exports = getAll;

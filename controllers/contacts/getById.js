@@ -10,4 +10,4 @@ const getById = async (req, res) => {
   res.json(result);
 };
 
-module.export = getById;
+module.exports = getById;

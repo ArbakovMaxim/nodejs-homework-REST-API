@@ -5,4 +5,4 @@ const add = async (req, res) => {
   res.status(201).json(result);
 };
 
-module.export = add;
+module.exports = add;

@@ -10,4 +10,4 @@ const deleteById = async (req, res) => {
   res.json({ message: "contact deleted" });
 };
 
-module.export = deleteById;
+module.exports = deleteById;
