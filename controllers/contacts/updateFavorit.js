@@ -13,5 +13,3 @@ const updateFavorit = async (req, res) => {
 };
 
 module.exports = updateFavorit;
-
-fk
