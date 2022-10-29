@@ -7,11 +7,23 @@ const ctrl = require("../../controllers/auth");
 
 const router = express.Router();
 
+// singup
+
 router.post(
   "/register",
   validateBody(schemas.registerSchema),
   ctrlWrapper(ctrl.register)
 );
+
+router.get("/verify/:verificationToken", ctrlWrapper(ctrl.verify));
+
+router.post(
+  "/verify/",
+  validateBody(schemas.verifyEmailSchema),
+  ctrlWrapper(ctrl.resendEmail)
+);
+
+// singin
 
 router.post(
   "/login",
